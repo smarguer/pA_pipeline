@@ -302,7 +302,8 @@ print $count." ". $done."\n";
 		}
 		if($#mins==0)
 		{
-		push @{$csfiltered[$chr[0]]},$css[$mins[0]];
+		##push @{$csfiltered[$chr[0]]},$css[$mins[0]];
+		push @{$csfiltered[$chr[$mins[0]]]},$css[$mins[0]];
 		}
 		elsif($#mins<0)
 		{
